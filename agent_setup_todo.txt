@@ -1,0 +1,32 @@
+# Agentic AI System Development - To-Do List
+
+This list outlines key topics and considerations for building an Agentic AI system, incorporating your initial thoughts and additional areas crucial for development.
+
+## Core Concepts & Workflow
+
+-   **Evaluations (Objective & Subjective):** Understanding how to measure an agent's performance, correctness, and adherence to nuanced requirements. This includes using golden datasets, LLM-as-a-judge, and human feedback.
+-   **Multi-Agent Communication and Protocols (MCP):** How multiple agents interact, share information, and coordinate to achieve a common goal. This involves defining communication formats, protocols, and conflict resolution strategies.
+-   **Agentic Frameworks:** Exploring existing libraries and tools (e.g., LangChain, LlamaIndex, AutoGen) that simplify agent development by providing pre-built components for orchestration, memory, and tool integration.
+
+## Essential Building Blocks
+
+-   **Orchestration & Control Flow:** Designing the core logic that dictates how an agent operates, makes decisions, and manages its workflow (e.g., ReAct, CoT, plan-and-execute).
+-   **Tooling & Function Calling:** Enabling agents to interact with external systems, APIs, databases, and custom functions to gather information or perform actions.
+-   **Memory Management:** Implementing mechanisms for agents to store, retrieve, and utilize information over time (short-term context, long-term knowledge bases, episodic memory).
+-   **Perception & Data Ingestion:** Strategies for agents to effectively read, parse, and understand various input formats (like your transaction tables: CSV, SQL, JSON) and convert them into actionable information.
+-   **Planning & Reasoning:** How agents break down complex problems into manageable sub-tasks, devise strategies, and perform logical inference to achieve goals.
+
+## Advanced Considerations
+
+-   **Safety & Alignment:** Ensuring the agent operates within ethical boundaries, avoids harmful outputs, and aligns with user intentions.
+-   **Monitoring & Observability:** Implementing logging, tracing, and metrics to track agent behavior, diagnose issues, and understand performance in real-world scenarios.
+-   **Deployment Strategies:** Considerations for deploying agentic systems into production environments, including scalability, latency, and resource management.
+-   **Prompt Engineering for Agents:** Crafting effective prompts that guide the LLM within an agent's loop, enabling it to perform specific tasks, use tools, and reason effectively.
+    -   **Context Engineering:** Strategies for managing, optimizing, and providing relevant context to the LLM to improve its reasoning and task execution without overwhelming it.
+-   **Fine-tuning/Pre-training (Optional):** When and how to adapt underlying language models for specific agent tasks or domains to improve performance beyond generic prompting.
+
+---
+
+### Project Goal: Transaction Data Reporting Agent
+
+**Objective:** Create an Agentic Setup that can read multiple transaction tables (containing vertical-wise, fund-wise gross sales, net sales, customer acquisitions, SIP/Lumpsum transactions), and generate a comprehensive report out of it, highlighting key areas of movement within a given time window.
